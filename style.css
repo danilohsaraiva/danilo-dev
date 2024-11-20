@@ -152,6 +152,7 @@ section .text-container {
     position: relative;
     align-items: center;
     justify-content: center;
+    margin-top: 160px;
 }
 
 .image-container img {
@@ -219,6 +220,7 @@ section .text-container {
 
 .about-me .about-me-title {
     text-align: center;
+    margin-top: 140px;
 }
 
 .about-me .sub-title,
@@ -420,31 +422,25 @@ p {
 
 footer {
     margin-top: auto;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     ;
     text-align: center;
 }
 
 
 @media (max-width: 768px) {
-    .name-original {
-        display: none;
-    }
+    header {
+        height: auto;
 
-    .name-change {
-        display: block;
+        h1 {
+            font-size: 16px;
+        }
+
+        display: flex;
+        flex-direction: column;
     }
 }
 
-@media (min-width: 769px) {
-    .name-original {
-        display: block;
-    }
-
-    .name-change {
-        display: none;
-    }
-}
 
 
 
@@ -477,28 +473,21 @@ footer {
 
     .container {
         flex-direction: column;
-        /* Coloca a imagem acima do texto em telas menores */
         align-items: center;
-        /* Centraliza o conteúdo */
         justify-content: center;
-        /* Centraliza verticalmente */
     }
 
     .image-container {
         position: relative;
-        /* Remover a posição absoluta */
         margin-bottom: 20px;
-        /* Adiciona um espaço abaixo da imagem */
         width: 100%;
-        /* Faz a imagem ocupar toda a largura */
-        display: flex;
-        justify-content: center;
     }
 
     .image-container img {
         justify-content: center;
         height: 250px;
         margin: auto;
+        padding: 10%;
     }
 
     .text-container {
