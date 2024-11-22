@@ -3,14 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    background-color: #AEC6CF;
+    background-color: fff;
     text-decoration: none;
 
     color: #646a6a;
-    /* Texto branco */
 
     h1 {
-        font-size: 20px;
+        font-size: 2rem;
+        
+    }
+    h2 {
+        font-size: 1.7re;
+    }
+    li {
+        font-size: 1.5rem;
     }
 }
 
@@ -20,42 +26,31 @@
     --third-color: #E8F2F6;
     --dark-color: #1f2020e1;
     --gordious-color: #1E111E;
+    --detals-top: #AC819B;
+
+    --font-light: #9C9ED5;
 }
 
-.header {
+header {
     position: relative;
+
     display: flex;
-    background-color: var(--primary-color);
-
-    h1 {
-        margin: 10px;
-    }
-
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
     position: fixed;
 
-    li {
-        font-size: 20px;
-    }
+    height: 5%;
+    width: 100vw;
+
+    background-color: white;
 
 }
 
 body {
     font-family: 'Garamond', 'Palatino Linotype', 'Georgia', serif;
-}
-
-header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 50px;
-    align-items: center;
-    margin-bottom: 5%;
-    z-index: 10;
-
-    position: fixed;
-
 }
 
 header nav ul {
@@ -70,10 +65,7 @@ section .text-container {
         font-weight: bold;
         margin: 1%;
         text-align: center;
-    }
-
-    h2 {
-        margin: 3%;
+        color: #212B6E;
     }
 
     div {
@@ -81,24 +73,34 @@ section .text-container {
     }
 }
 
+.me {
+    width: 100vw;
+    background: radial-gradient(circle, #2a3d7e, #000000);
+    
+}
+
 .container {
     display: flex;
     flex-direction: row;
-    width: 70vw;
+    width: 100vw;
     margin: auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
     height: 100vh;
     flex-wrap: wrap;
 
     .image-container {
-        margin-top: 60px;
-        width: 150px;
-        height: 150px;
+        display: flex;
         border-radius: 50%;
+        margin-right: 2em;
+        margin-top: 160px;
         margin-bottom: 20px;
-        transition: transform 1s ease-in-out;
+        align-items: center;
+        justify-content: center;
     }
+
+    
 
 
     button {
@@ -125,6 +127,62 @@ section .text-container {
 
     }
 
+
+    @keyframes neon-pulso {
+        0%, 100% {
+          text-shadow: 
+            0 0 5px #0ff, 
+            0 0 10px #0ff, 
+            0 0 20px #0ff, 
+            0 0 40px #00ffff, 
+            0 0 80px #00ffff;
+        }
+        50% {
+          text-shadow: 
+            0 0 2px #0ff, 
+            0 0 5px #0ff, 
+            0 0 10px #0ff, 
+            0 0 20px #00ffff, 
+            0 0 40px #00ffff;
+        }
+      }
+    /*deixar de exemplo fonte totalmente neon
+    .neon-name {
+        font-size: 2rem;
+        font-weight: bolde;
+        color: #0ff;
+        text-shadow: 0 0 5px #0ff,
+        0 0 5px #0ff,
+        0 0 5px #0ff;
+        animation: neon-pulso 2x infinite;
+    }
+      */
+
+    .neon-name{
+        font-size: 3rem;
+        font-weight: bold;
+        color:#0ff;
+        text-shadow:
+        0 0 5px #9C9ED5,
+        0 0 10px #9C9ED5,
+        0 0 20px #525DC6,
+        0 0 40px #C88FC4,
+        0 0 5px #C88FC4;
+
+    }
+
+    .neon-description {
+        font-size: 2rem; /* Tamanho grande para realçar o efeito */
+        font-weight: bold; /* Torna o texto mais chamativo */
+        color: #ffffff; /* Cor do texto */
+        text-shadow: 
+          0 0 5px #C88FC4,  /* Sombra fraca */
+          0 0 10px #C88FC4, /* Sombra média */
+          0 0 20px #525DC6, /* Brilho intenso */
+          0 0 40px #9C9ED5, /* Efeito neon expandido */
+          0 0 80px #9C9ED5; /* Finaliza o gradiente do brilho */
+      }
+
     & .btn-dark {
         background-color: var(--dark-color);
         color: var(--secundary-color);
@@ -145,33 +203,29 @@ section .text-container {
 
 }
 
-.image-container {
-    display: flex;
-    position: relative;
-    height: 250px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin-top: 160px;
-}
 
 .image-container img {
-
-    height: 250px;
+    width: 300px;
     border-radius: 50%;
+    box-shadow: 
+    0 0 1ch #9292c7,  /* Sombra fraca */
+    0 0 5px #507ba8, /* Sombra média */
+    0 0 10px #525DC6, /* Brilho intenso */
+    0 0 30px #9C9ED5, /* Efeito neon expandido */
+    0 0 40px #9C9ED5; /* Finaliza o gradiente do brilho */
+    ;
+
 }
 
+
 .text-container {
-    position: relative;
+    margin-left: 2em;
+    margin-top: 160px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    height: 250px;
-    flex: auto;
-    min-width: 250px;
-}
-
-.image-container,
-.text-container {
-    flex: 1;
+    width: 300px;
 }
 
 .container .text-container .networking {
@@ -185,12 +239,16 @@ section .text-container {
     img {
         width: 25px;
         height: 25px;
-        background-color: var(--third-color);
+    }
+    .img-networking {
+        background-color: #fff;
+        padding: 2px;
         border-radius: 50%;
     }
 }
 
 .about-me {
+    background: #fff;
     position: relative;
     display: flex;
     width: 100vw;
@@ -198,6 +256,10 @@ section .text-container {
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 10%;
+    h2 {
+        font-size: 2rem;
+    }
 }
 
 .about-me .education-description .container-stacks .stack-hardskills {
@@ -221,6 +283,8 @@ section .text-container {
 .about-me .about-me-title {
     text-align: center;
     margin-top: 140px;
+    margin-bottom: 80px;
+    color: #212B6E;
 }
 
 .about-me .sub-title,
@@ -238,8 +302,11 @@ p {
     margin-top: 20px;
 
     & img {
-        width: 20px;
+        width: 30px;
         background-color: var(--secundary-color);
+    }
+    h2 {
+        color: #212B6E;
     }
 }
 
@@ -249,15 +316,14 @@ p {
     justify-items: center;
     justify-content: center;
     width: 100vw;
+    flex:1;
 
     p {
-        max-width: 500px;
+        background-color: #fff;
+        max-width: 40vw;
         min-width: 250px;
         margin-top: 5%;
         text-align: left;
-
-
-        background-color: #AEC6CF;
     }
 }
 
@@ -285,6 +351,10 @@ p {
     flex-direction: column;
 }
 
+.container-stacks, .container-college-and-certifications {
+    box-shadow: 0 10px 30px rgba(132, 255, 230, 0.5); /* Sombra inicial */
+    animation: float 3s ease-in-out infinite, glow 3s ease-in-out infinite;
+}
 
 /* Alinhamento e estilo geral da linha do tempo */
 .timeline {
@@ -296,11 +366,12 @@ p {
     width: 100vw;
     height: 100vh;
     background-color: var(--primary-color);
+    margin-top: 5%;
 
     span,
     h3,
     p {
-        background-color: var(--secundary-color);
+        background-color: var(--secundary-color));
     }
 
     .timeline-item,
@@ -386,7 +457,7 @@ p {
     }
 
     p {
-        background-color: var(--primary-color);
+        background-color: var(--secundary-color);
     }
 
     .contact-item {
@@ -430,15 +501,14 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        height: auto;
-
-        h1 {
-            font-size: 16px;
-        }
-
         display: flex;
         flex-direction: column;
     }
+
+    .image-container img {
+       
+    }
+
 }
 
 
@@ -447,14 +517,9 @@ footer {
 /* Para telas menores que 768px (tablet e smartphones pequenos) */
 @media (max-width: 768px) {
     header {
-        width: 100%;
-        /* Ajusta o tamanho do header para telas menores */
-        transition: padding 0.3s, font-size 0.3s;
-
-        h1 {
-            font-size: 14;
-        }
+        height: 10%;
     }
+
 
     .header.minimized {
         padding: 5px 0;
@@ -478,19 +543,21 @@ footer {
     }
 
     .image-container {
+        margin: auto;
         position: relative;
+        width: 230px;
         margin-bottom: 20px;
         width: 100%;
     }
 
     .image-container img {
         justify-content: center;
-        height: 250px;
+        width: 250px;
         margin: auto;
-        padding: 10%;
     }
 
     .text-container {
+        width: 250px;
         margin: auto;
         text-align: center;
         /* Alinha o texto ao centro */
