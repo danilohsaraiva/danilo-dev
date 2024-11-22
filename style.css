@@ -500,14 +500,7 @@ footer {
 
 
 @media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .image-container img {
-       
-    }
 
 }
 
@@ -516,8 +509,12 @@ footer {
 
 /* Para telas menores que 768px (tablet e smartphones pequenos) */
 @media (max-width: 768px) {
+
     header {
+        display: flex;
+        flex-direction: column;
         height: 10%;
+        width: 100vw;
     }
 
 
@@ -540,14 +537,14 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
 
     .image-container {
         margin: auto;
         position: relative;
-        width: 230px;
         margin-bottom: 20px;
-        width: 100%;
+        width: 100vw;
     }
 
     .image-container img {
@@ -558,9 +555,8 @@ footer {
 
     .text-container {
         width: 250px;
-        margin: auto;
+        margin: 0;
         text-align: center;
-        /* Alinha o texto ao centro */
     }
 
     .education-description {
@@ -582,13 +578,11 @@ footer {
 /* Para telas menores que 480px (smartphones) */
 @media (max-width: 480px) {
     header {
-        width: 95vw;
-        /* Ajusta mais ainda para telas pequenas */
+        width: 100vw;
     }
 
 
     .text-container {
         font-size: 14px;
-        /* Reduz o tamanho da fonte para telas pequenas */
     }
 }
