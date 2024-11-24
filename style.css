@@ -8,20 +8,23 @@
     color: #646a6a;
 
     h1 {
-        font-size: 1rem;
-        
+        font-size: 2rem; /* 32px */
     }
+    
     h2 {
-        font-size: 0.9rem;
+        font-size: 1.5rem; /* 24px */
     }
+    
     li {
-        font-size: 0.9rem;
+        font-size: 1rem; /* 16px */
     }
+    
     p {
-        font-size: 0.7rem;
+        font-size: 1rem; /* 16px */
     }
+    
     a {
-        font-size: 0.7rem;
+        font-size: 1rem; /* 16px */
     }
 }
 
@@ -231,7 +234,7 @@ header nav ul {
     position: relative;
     display: flex;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -260,7 +263,7 @@ header nav ul {
 
 .about-me .about-me-title {
     text-align: center;
-    margin-top: 10px;
+    margin-top: px;
     margin-bottom: 20px;
     color: #212B6E;
 }
@@ -307,8 +310,8 @@ p {
 
 .container-stacks,
 .container-college-and-certifications {
-    width: 250px;
-    height: 100px;
+    width: 290px;
+    height: 140px;
     min-width: 250px;
     max-width: 600px;
     padding: 10px;
@@ -362,15 +365,22 @@ p {
 .container-contact {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
+    padding: 20px;
     text-align: center;
     width: 100vw;
     height: 100vh;
     scroll-margin-top: 40px;
+    
 
     .contact-title {
-        margin-top: 20px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         p, h2{
             color: #2a3d7e;
         }
@@ -378,10 +388,7 @@ p {
             background-color: #F0EEF0;
         }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
         
         .contact-itens {
             display: flex;
@@ -455,8 +462,16 @@ button {
 
 
 footer {
-        margin: auto;
-        text-align: end;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    z-index: 1;
+    width: 100vw;
+
     
     p {
         background-color: #F0EEF0;
