@@ -8,14 +8,20 @@
     color: #646a6a;
 
     h1 {
-        font-size: 2rem;
+        font-size: 1rem;
         
     }
     h2 {
-        font-size: 1.7re;
+        font-size: 0.9rem;
     }
     li {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+    a {
+        font-size: 0.7rem;
     }
 }
 
@@ -40,7 +46,7 @@ header {
     z-index: 1;
     position: fixed;
 
-    height: 80px;
+    height: 40px;
     width: 100vw;
 
     background-color: white;
@@ -48,7 +54,7 @@ header {
 }
 
 body {
-    font-family: 'Garamond', 'Palatino Linotype', 'Georgia', serif;
+    font-family: 'Garamond','Palatino Linotype', 'Georgia', serif;
     background: #F0EEF0;
 }
 
@@ -59,22 +65,11 @@ header nav ul {
     gap: 10%;
 }
 
-section .text-container {
-    h1 {
-        font-weight: bold;
-        margin: 1%;
-        text-align: center;
-        color: #212B6E;
-    }
 
-    div {
-        padding: 2%;
-    }
-}
 
 .me {
     position: relative;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 40px;
     height: 100vh;
     width: 100vw;
     background: radial-gradient(circle, #2a3d7e, #000000);
@@ -96,11 +91,14 @@ section .text-container {
         display: flex;
         border-radius: 50%;
         margin-right: 2em;
-        margin-top: 160px;
+        margin-top: 40px;
         margin-bottom: 20px;
         align-items: center;
         justify-content: center;
         width: 300px;
+        img {
+            width: 200px;
+        }
     }
 
 
@@ -135,9 +133,10 @@ section .text-container {
       */
 
     .neon-name{
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;
         color:#0ff;
+        margin-bottom: 2%;
         text-shadow:
         0 0 5px #9C9ED5,
         0 0 10px #9C9ED5,
@@ -151,9 +150,10 @@ section .text-container {
     }
 
     .neon-description {
-        font-size: 2rem; /* Tamanho grande para realçar o efeito */
+        font-size: 1.3rem; /* Tamanho grande para realçar o efeito */
         font-weight: bold; /* Torna o texto mais chamativo */
         color: #ffffff; /* Cor do texto */
+        margin-bottom: 2%;
         text-shadow: 
           0 0 5px #C88FC4,  /* Sombra fraca */
           0 0 10px #C88FC4, /* Sombra média */
@@ -198,8 +198,8 @@ section .text-container {
 
 
 .text-container {
-    margin-left: 02em;
-    margin-top: 160px;
+    margin-left: 2em;
+    margin-top: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -227,24 +227,22 @@ section .text-container {
 }
 
 .about-me {
-    background: #F0EEF0;
+    background-color: #F0EEF0;
     position: relative;
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     text-align: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 5%;
-    scroll-margin-top: 80px;
-    h2 {
-        font-size: 2rem;
-    }
+    scroll-margin-top: 40px;
 }
 
 .about-me .education-description .container-stacks .stack-hardskills {
     display: flex;
     justify-content: space-around;
+
     background-color: var(--secundary-color);
 
     & li {
@@ -253,8 +251,8 @@ section .text-container {
 
         & img {
             margin-top: 10px;
-            width: 40px;
-            height: 40px;
+            width: 20px;
+            height: 20px;
             background-color: var(--secundary-color);
         }
     }
@@ -263,7 +261,7 @@ section .text-container {
 .about-me .about-me-title {
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     color: #212B6E;
 }
 
@@ -279,10 +277,10 @@ p {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1%;
 
     & img {
-        width: 30px;
+        width: 20px;
         background-color: var(--secundary-color);
     }
     h2 {
@@ -309,8 +307,8 @@ p {
 
 .container-stacks,
 .container-college-and-certifications {
-    width: 300px;
-    height: 150px;
+    width: 250px;
+    height: 100px;
     min-width: 250px;
     max-width: 600px;
     padding: 10px;
@@ -330,7 +328,7 @@ p {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 40px;
 
     h2 {
         margin-top: -100%;
@@ -343,7 +341,6 @@ p {
         0 0 5px #C88FC4;
     }
     .typing-text {
-        font-size: 1rem; 
         font-weight: bold; 
         color: #ffffff; 
         text-shadow: 
@@ -370,17 +367,15 @@ p {
     text-align: center;
     width: 100vw;
     height: 100vh;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 40px;
 
     .contact-title {
-        margin-top: 80px;
+        margin-top: 20px;
         p, h2{
             color: #2a3d7e;
-            font-size: 2rem;
         }
         p {
             background-color: #F0EEF0;
-            font-size: 1rem;
         }
 
         display: flex;
@@ -398,8 +393,8 @@ p {
             height: 100%;
 
             img {
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
                 background-color: #0ff;
                 border-radius: 50%;
                 margin-left: 15px;
@@ -410,11 +405,11 @@ p {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                width: 300px;
-                height: 50px;
+                width: 200px;
+                height: 30px;
                 max-width: 300px;
                 background: #151f51;
-                margin: 1em;
+                margin: 0.5rem;
 
 
                 p,a {
@@ -446,11 +441,11 @@ button {
     border: none;
     border-radius: 0px;
     cursor: pointer;
-    width: 300px;
-    height: 50px;
+    width: 200px;
+    height: 30px;
     text-align: center;
-    margin-top: 1em;
     font-weight: bold;
+    margin-top: 0.5em;
     a {
         color: #0ff;
     }
@@ -460,8 +455,8 @@ button {
 
 
 footer {
-    margin: auto;
-    text-align: center;
+        margin: auto;
+        text-align: end;
     
     p {
         background-color: #F0EEF0;
@@ -469,15 +464,12 @@ footer {
 }
 
 
-
-
-
-
 /* Para telas menores que 768px (tablet e smartphones pequenos) */
 @media (max-width: 768px) {
 
     header {
         width: 100vw;
+        height: auto;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -495,17 +487,9 @@ footer {
     .me .container .image-container {
         margin: 120px auto auto auto;
     }
-    h1 {
-        font-size: 1.2em;
-    }
-
-    h2, li {
-        font-size: 1em;
-        
-    }
-
-    p {
-        font-size: 0.9em;
+    
+    .me .container div .networking a {
+        margin: 6%;
     }
 
 
@@ -526,11 +510,12 @@ footer {
 
     .container {
         display: flex;
+        flex-direction: column;
         width: 100vw;
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 100vh;
+        height: auto;
         margin: 0;
     }
 
@@ -538,13 +523,10 @@ footer {
         margin: 0;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         width: 300px;
     }
 
-    .image-container img {
-        width: 250px;
-    }
 
     .text-container {
         display: flex;
