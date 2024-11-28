@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Danilo Saraiva - Portifólio Profissional</title>
+    <link rel="icon" href="img/favicon-60x60.png" type="image/x-icon">
 </head>
 
 <body>
 
     <header class="header">
-            <h1 class="name-original"><a href="#me">Danilo Saraiva</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#about-me">Sobre</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
+        <h1 class="name-original"><a href="#me">Danilo Saraiva</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="me" class="me">
 
         <div class="container">
-
             <div class="image-container">
                 <img src="./img/perfil_ligth.png" alt="Imagem de Perfil" class="neon-photo">
             </div>
@@ -42,10 +42,10 @@
                             <img class="img-networking" src="./img/github.png">
                         </a>
                         <a href="https://www.instagram.com/danilohsaraiva" target="_blank">
-                            <img  src="./img/instagram.png">
+                            <img src="./img/instagram.png">
                         </a>
                         <a href="https://www.facebook.com/danilohsaraiva" target="_blank">
-                            <img  src="./img/facebook.png">
+                            <img src="./img/facebook.png">
                         </a>
                     </div>
                 </div>
@@ -55,45 +55,67 @@
     </section>
 
     <section id="about-me" class="about-me">
-        <h2 class="about-me-title">Sobre mim</h2>
+        <div class="about-me-container">
+            <h1 class="about-me-title">Sobre mim</h1>
 
-        <div class="education-description">
-            <div class="container-stacks">
-                <img src="./img/digital-transformation.png">
-                <h2 class="sub-title">Tecnologias</h2>
-                <ul class="stack-hardskills">
-                    <li><img src="./img/java.png" alt="Java"></li>
-                    <li><img src="./img/database.png" alt="MySQL"></li>
-                </ul>
-            </div>
 
-            <div class="container-college-and-certifications">
-                <img src="./img/education.png">
-                <h2 class="sub-title">Formação</h2>
-                <p>Bacharel em Sistema de Informação, UEMG</p>
-                <p>Previsão de Formação: Dez/26</p>
+            <div class="about-me-content">
+                <div class="description">
+                    <div class="description-text-start">
+                        <h1>Olá, Meu nome é Danilo!</h1>
+                        <h2>Sou apaixonado por tecnologia e desenvolvimento de soluções, com foco no Back-End.</h2>
+                        <h3>Venho aculumando conhecimento em:</h3>
+
+                        <p>Lógica de programação e Pensamento Computacional, que aplico no desenvolvimento
+                            de códigos, utilizando principalmente
+                            JAVA (linguagem com maior familiaridade), POO (Programação Orientada a Objetos) e buscando
+                            aplicar a melhor arquitetura possível ao algoritimo.</p>
+                        <p>
+                            Banco de Dados Relacionais, desde a busca de requisitos ao desenvolvimento dos Modelos e
+                            Diagramas de
+                            Entidade e Relacionamento à criação de Scripts utilizando SQL e manutenção do mesmo (Possuo
+                            certificação
+                            de Auxiliar de DB - SENAC).
+                        </p>
+                        <p>
+                            Venho me desenvolvendo a cerca de API’s REST utilizando Spring Boot e recursos como
+                            Hibernate, JPA, Lombok e etc.
+                        </p>
+
+                        <p>
+                            Sou comunicativo, organizado e sempre motivado a aprender mais, buscando transformar ideias
+                            em soluções.
+                        </p>
+                        <h2>:> lifelong learning ☕</h2>
+                    </div>
+                    <div class="description-text-end">
+                        <h3>
+                            Descubra como posso contribuir para o sucesso da sua equipe!
+                        </h3>
+                        <div>
+                            <button class="btn-light"><a href="danilo-curriculo-dev.pdf"
+                                    download="danilo-curriculo-dev">Download CV</a></button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="education-description">
+
+                    <div class="container-college">
+                        <img>
+                        <h1 class="sub-title">Formação</h1>
+                        <h2>Bacharel em Sistema de Informação, UEMG</h2>
+                        <h3>Previsão de Formação: Dez/26<br><br></h3>
+                        <h1>Objetivo</h1>
+                        <h3>Trabalho remoto no regime de Estágio na área de Back-End</h3>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="description">
-            <p>
-                Possuo conhecimento de lógica de programação e pensamento computacional, que aplico no desenvolvimento
-                de códigos, utilizando principalmente
-                JAVA (linguagem com maior familiaridade), POO (Programação Orientada a Objetos) e respeitando princípios
-                de SOLID e Clean.
-                Code.<br><br>
 
-                Banco de Dados Relacionais, desde a busca de requisitos ao desenvolvimento dos Modelos e Diagramas de
-                Entidade e Relacionamento à criação de scripts utilizando SQL e manutenção do mesmo (Possuo certificação
-                de Auxiliar de DB - SENAC).
-                <br><br>
-
-                Atualmente, tenho estudado o desenvolvimento de API’s REST utilizando Spring Boot e recursos como
-                Hibernate, JPA, Lombok e etc.<br><br>
-
-                Além de ser comunicativo, organizado e apaixonado por desenvolvimento de soluções.
-            </p>
-        </div>
     </section>
 
     <section id="projects" class="container-projects">
@@ -108,24 +130,68 @@
 
     <section id="contact" class="container-contact">
 
-        <div class="contact-title">
-            <p>Entre em</p>
-            <h2> Contato Por </h2>
-
-            <div class="contact-itens">
-                <div class="contact-item">
-                    <img src="./img/email.png">
-                    <a href="mailto:dannsrv@hotmail.com?subject=&body=">dannsrv@hotmail.com</a>
+        <div>
+            <div class="container-informations">
+                <div class="logo">
+                    <h2>DS</h2>
                 </div>
-                <div class="contact-item">
-                    <img src="./img/phone-call.png">
-                    <a href="https://wa.me/5534999772043" target="_blank"><p>(34) 9 9977-2043</p></a>
-                    
+                <div>
+                    <h1>Danilo Saraiva</h1>
+                    <h2>Desenvolvedor Back-End</h2>
                 </div>
-                
             </div>
-            <div>
-                <button class="btn-light"><a href="danilo-curriculo-dev.pdf" download="danilo-curriculo-dev">Download CV</a></button>
+        </div>
+
+        <div class="contact">
+            <div id="inicial-text" onClick="showText()">
+                <p>BUSCANDO UM ESTAGIÁRIO!</p>
+                <h2>Vamos trabalhar Juntos →</h2>
+            </div>
+            <div id="ty-text">
+                <p>EM BREVE ENTRAREI EM CONTATO</p>
+                <h2>Obrigado!</h2>
+            </div>
+            <div id="hidden-text" class="container-forms" style="display: none;">
+                <form id="contact-form">
+                    <input id="name" type="text" name="name" placeholder="Nome" autocomplete="off" required>
+                    <input id="e-mail" type="text" name="e-mail" placeholder="Email" autocomplete="off" required>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Mensagem"
+                        required></textarea>
+                    <button id="btn-send" class="button-forms" type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="77ef4dfd-8f3d-406d-8b48-c6af9c4d443f">
+                    <input type="hidden" name="redirectTo" value="https://danilohsaraiva.github.io/portifolio/">
+                </form>
+            </div>
+
+
+            <div class="container-base-informations">
+                <div>
+                    <h3>Informações de Contato →</h3>
+                    <p>Sinta-se a vontade para entrar em contato.</p>
+                    <h3><a href="https://wa.me/5534999772043" target="_blank"><p>Tel: (34) 9 9977-2043</a></h3>
+                    <h3> <a href="mailto:dannsrv@hotmail.com">Email: dannsrv@hotmail.com</a></h3>
+                </div>
+
+                <div class="aditional-informations">
+                    <div>
+                        <h3>Último Projeto →</h3>
+                        <p>Em construção</p>
+                    </div>
+                    <div>
+                        <h3>Momento Atual →</h3>
+                        <p></p>Em busca de estágio no modelo Home Office</p>
+                    </div>
+                    <div>
+                        <h3>Siga-me →</h3>
+                        <a href="https://www.linkedin.com/in/danilohsaraiva/" target="_blank">
+                            <p><b>Linkedin</b></p>
+                        </a>
+                        <a href="https://www.instagram.com/danilohsaraiva" target="_blank">
+                            <p><b>Instagram</b></p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
