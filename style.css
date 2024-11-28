@@ -642,6 +642,10 @@ footer {
         justify-content: center;
     }
 
+    #inicial-text {
+        margin: 1rem;
+    }
+
     .education-description {
         width: 100%;
     }
@@ -688,6 +692,7 @@ footer {
         height: auto;
     }
     .container-contact .container-informations {
+        width: 100%;
         text-align: start;
         padding: 2rem
     }
