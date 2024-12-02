@@ -229,10 +229,11 @@ header nav ul {
         width: 25px;
         height: 25px;
     }
+    
     .img-networking {
-        background-color: #fff;
-        padding: 2px;
-        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin: -2.5px;
     }
 }
 
@@ -671,11 +672,6 @@ footer {
         text-align: justify;
     }
 
-    .description p {
-
-            width: 250px;
-        
-    }
 
     .description-text-end {
         width: 100%;
