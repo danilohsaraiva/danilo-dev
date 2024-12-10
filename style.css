@@ -446,9 +446,16 @@ button a {
 .project-show-item {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+.project-header {
+    display: flex; 
+    width: 100%;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex-wrap: nowrap;
 }
 
 
@@ -456,12 +463,13 @@ button a {
 .project-show-item:hover .project-description {
     opacity: 0.5;
     /* Reduz opacidade */
-    transform: scale(0.9);
+    transform: scale(0.5);
     /* Reduz tamanho */
 }
 
 .project-show-item:hover .project-header .logo-centro {
-    height: auto;
+    height: 100px;
+    width: auto;
 }
 
 .project-show-item:hover .white-text {
@@ -484,13 +492,22 @@ button a {
 
 .project-header,
 .project-description {
-    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
     /* Transição suave para os outros elementos */
 }
 
-.project-header>* {
-    margin: 2rem;
+.project-header > * {
+  margin: 0;
 }
+.project-description {
+    display: flex;
+    text-align: center;
+    height: auto;
+}
+.project-description > * {
+    margin: 0;
+}
+
 
 .project-description-item {
     display: flex;
@@ -507,7 +524,7 @@ button a {
     /* Leve redução de escala */
     pointer-events: none;
     /* Previne interação enquanto invisível */
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.1s ease, transform 0.3s ease;
 }
 
 
@@ -521,13 +538,10 @@ button a {
     /* Retorna ao tamanho original */
     pointer-events: auto;
     /* Permite interação */
-    transition: opacity 0.1s ease 0s, transform 0.1s ease 0s, visibility 0s 0s;
+    transition: opacity 0.1s ease 0.2s, transform 0.3s ease 0.5s, visibility 0.1s 0.1s;
     /* Remove o atraso na interação */
 }
 
-.project-description > * {
-    margin: 2rem;
-}
 
 
 .typing-text {
@@ -548,6 +562,7 @@ button a {
     border-radius: 50%;
     padding: 10px;
     height: auto;
+    margin-top: 15px;
 }
 
 .link-repository {
