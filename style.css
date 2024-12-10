@@ -461,8 +461,7 @@ button a {
 }
 
 .project-show-item:hover .project-header .logo-centro {
-    width: 150px;
-    height: 150px;
+    height: auto;
 }
 
 .project-show-item:hover .white-text {
@@ -477,7 +476,7 @@ button a {
     color: #E0E0E0;
     opacity: 0;
     /* Começa invisível */
-    transition: opacity 5s ease-in-out;
+    transition: opacity 0s ease-in-out;
     /* Suaviza a transição */
     visibility: hidden;
     /* Esconde a div visualmente e do layout */
@@ -485,7 +484,7 @@ button a {
 
 .project-header,
 .project-description {
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
     /* Transição suave para os outros elementos */
 }
 
